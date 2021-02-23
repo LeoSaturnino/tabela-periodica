@@ -1,0 +1,186 @@
+package br.edu.fcsl.lp3.entidade;
+
+import java.awt.Color;
+
+public enum ElementoQuimico {
+	H(0,0,1,"H","Hidrogênio","Não-Metais",new Color(0,255,0),"Gasoso",1.00794),
+	He(0,17,2,"He","Hélio","Gases nobres",new Color(0,139,139),"Gasoso",4.002602),
+	Li(1,0,3,"Li","Lítio","Metais alcalinos",new Color(255,165,0),"Sólido",6.941),
+	Be(1,1,4,"Be","Berílio","Metais alcalino-terrosos",new Color(255,255,0),"Sólido",9.012182),
+	B(1,12,5,"B","Boro","Semi-Metais",new Color(60,179,113),"Sólido",10.811),
+	C(1,13,6,"C","Carbono","Não-Metais",new Color(0,255,0),"Sólido",12.0107),
+	N(1,14,7,"N","Nitrogênio","Não-Metais",new Color(0,255,0),"Gasoso",14.0067),
+	O(1,15,8,"O","Oxigênio","Não-Metais",new Color(0,255,0),"Gasoso",15.9994),
+	F(1,16,9,"F","Flúor","Halogênios",new Color(0,191,255),"Gasoso",18.9984032),
+	Ne(1,17,10,"Ne","Neônio","Gases nobres",new Color(0,139,139),"Gasoso",20.1797),
+	Na(2,0,11,"Na","Sódio","Metais alcalinos",new Color(255,165,0),"Sólido",22.98976928),
+	Mg(2,1,12,"Mg","Magnésio","Metais alcalino-terrosos",new Color(255,255,0),"Sólido",24.3050),
+	Al(2,12,13,"Al","Alumínio","Metais representativos",new Color(169,169,169),"Sólido",26.9815386),
+	Si(2,13,14,"Si","Silício","Semi-Metais",new Color(60,179,113),"Sólido",28.0855),
+	P(2,14,15,"P","Fósforo","Não-Metais",new Color(0,255,0),"Sólido",30.973762),
+	S(2,15,16,"S","Enxofre","Não-Metais",new Color(0,255,0),"Sólido",32.065),
+	Cl(2,16,17,"Cl","Cloro","Halogênios",new Color(0,191,255),"Gasoso",35.453),
+	Ar(2,17,18,"Ar","Argônio","Gases nobres",new Color(0,139,139),"Gasoso",39.948),
+	K(3,0,19,"K","Potássio","Metais alcalinos",new Color(255,165,0),"Sólido",39.0983),
+	Ca(3,1,20,"Ca","Cálcio","Metais alcalino-terrosos",new Color(255,255,0),"Sólido",40.078),
+	Sc(3,2,21,"Sc","Escândio","Metais de transição",new Color(255,105,180),"Sólido",44.955912),
+	Ti(3,3,22,"Ti","Titânio","Metais de transição",new Color(255,105,180),"Sólido",47.867),
+	V(3,4,23,"V","Vanádio","Metais de transição",new Color(255,105,180),"Sólido",50.9415),
+	Cr(3,5,24,"Cr","Cromo","Metais de transição",new Color(255,105,180),"Sólido",51.9961),
+	Mn(3,6,25,"Mn","Manganês","Metais de transição",new Color(255,105,180),"Sólido",54.938045),
+	Fe(3,7,26,"Fe","Ferro","Metais de transição",new Color(255,105,180),"Sólido",55.845),
+	Co(3,8,27,"Co","Cobalto","Metais de transição",new Color(255,105,180),"Sólido",58.933195),
+	Ni(3,9,28,"Ni","Níquel","Metais de transição",new Color(255,105,180),"Sólido",58.6934),
+	Cu(3,10,29,"Cu","Cobre","Metais de transição",new Color(255,105,180),"Sólido",63.546),
+	Zn(3,11,30,"Zn","Zinco","Metais de transição",new Color(255,105,180),"Sólido",65.409),
+	Ga(3,12,31,"Ga","Gálio","Metais representativos",new Color(169,169,169),"Sólido",69.723),
+	Ge(3,13,32,"Ge","Germânio","Semi-Metais",new Color(60,179,113),"Sólido",72.64),
+	As(3,14,33,"As","Arsênio","Semi-Metais",new Color(60,179,113),"Sólido",74.92160),
+	Se(3,15,34,"Se","Selênio","Não-Metais",new Color(0,255,0),"Sólido",78.96),
+	Br(3,16,35,"Br","Bromo","Halogênios",new Color(0,191,255),"Líquido",79.904),
+	Kr(3,17,36,"Kr","Criptônio","Gases nobres",new Color(0,139,139),"Gasoso",83.798),
+	Rb(4,0,37,"Rb","Rubídio","Metais alcalinos",new Color(255,165,0),"Sólido",85.4678),
+	Sr(4,1,38,"Sr","Estrôncio","Metais alcalino-terrosos",new Color(255,255,0),"Sólido",87.62),
+	Y(4,2,39,"Y","Ítrio","Metais de transição",new Color(255,105,180),"Sólido",88.90585),
+	Zr(4,3,40,"Zr","Zircônio","Metais de transição",new Color(255,105,180),"Sólido",91.224),
+	Nb(4,4,41,"Nb","Nióbio","Metais de transição",new Color(255,105,180),"Sólido",92.90638),
+	Mo(4,5,42,"Mo","Molibdênio","Metais de transição",new Color(255,105,180),"Sólido",95.94),
+	Tc(4,6,43,"Tc","Tecnécio","Metais de transição",new Color(255,105,180),"Sólido",98),
+	Ru(4,7,44,"Ru","Rutênio","Metais de transição",new Color(255,105,180),"Sólido",101.07),
+	Rh(4,8,45,"Rh","Rhódio","Metais de transição",new Color(255,105,180),"Sólido",102.90550),
+	Pd(4,9,46,"Pd","Paládio","Metais de transição",new Color(255,105,180),"Sólido",106.42),
+	Ag(4,10,47,"Ag","Prata","Metais de transição",new Color(255,105,180),"Sólido",107.8682),
+	Cd(4,11,48,"Cd","Cádmio","Metais de transição",new Color(255,105,180),"Sólido",112.411),
+	In(4,12,49,"In","Índio","Metais representativos",new Color(169,169,169),"Sólido",114.818),
+	Sn(4,13,50,"Sn","Estanho","Metais representativos",new Color(169,169,169),"Sólido",118.710),
+	Sb(4,14,51,"Sb","Antimônio","Semi-Metais",new Color(60,179,113),"Sólido",121.760),
+	Te(4,15,52,"Te","Telúrio","Semi-Metais",new Color(60,179,113),"Sólido",128.60),
+	I(4,16,53,"I","Iodo","Halogênios",new Color(0,191,255),"Sólido",126.90447),
+	Xe(4,17,54,"Xe","Xenônio","Gases nobres",new Color(0,139,139),"Gasoso",131.293),
+	Cs(5,0,55,"Cs","Césio","Metais alcalinos",new Color(255,165,0),"Sólido",132.905451),
+	Ba(5,1,56,"Ba","Bário","Metais alcalino-terrosos",new Color(255,255,0),"Sólido",137.327),
+	Hf(5,3,72,"Hf","Hálnio","Metais de transição",new Color(255,105,180),"Sólido",178.49),
+	Ta(5,4,73,"Ta","Tântalo","Metais de transição",new Color(255,105,180),"Sólido",180.94788),
+	W(5,5,74,"W","Tungstênio","Metais de transição",new Color(255,105,180),"Sólido",183.84),
+	Re(5,6,75,"Re","Rênio","Metais de transição",new Color(255,105,180),"Sólido",186.207),
+	Os(5,7,76,"Os","Ósmio","Metais de transição",new Color(255,105,180),"Sólido",190.23),
+	Ir(5,8,77,"Ir","Irídio","Metais de transição",new Color(255,105,180),"Sólido",192.217),
+	Pt(5,9,78,"Pt","Platina","Metais de transição",new Color(255,105,180),"Sólido",195.084),
+	Au(5,10,79,"Au","Ouro","Metais de transição",new Color(255,105,180),"Sólido",196.966569),
+	Hg(5,11,80,"Hg","Mercúrio","Metais de transição",new Color(255,105,180),"Líquido",200.59),
+	Tl(5,12,81,"Tl","Tálio","Metais representativos",new Color(169,169,169),"Sólido",204.3833),
+	Pb(5,13,82,"Pb","Chumbo","Metais representativos",new Color(169,169,169),"Sólido",207.2),
+	Bi(5,14,83,"Bi","Bismuto","Metais representativos",new Color(169,169,169),"Sólido",208.98040),
+	Po(5,15,84,"Po","Polônio","Semi-Metais",new Color(60,179,113),"Sólido",209),
+	At(5,16,85,"At","Astato","Halogênios",new Color(0,191,255),"Sólido",210),
+	Rn(5,17,86,"Rn","Radônio","Gases nobres",new Color(0,139,139),"Gasoso",222),
+	Fr(6,0,87,"Fr","Frâncio","Metais alcalinos",new Color(255,165,0),"Sólido",223),
+	Ra(6,1,88,"Ra","Rádio","Metais alcalino-terrosos",new Color(255,255,0),"Sólido",226),
+	Rf(6,3,104,"Rf","Ruterfódio","Metais de transição",new Color(255,105,180),"Sólido",261),
+	Db(6,4,105,"Db","Dúbnio","Metais de transição",new Color(255,105,180),"Desconhecido",268),
+	Sg(6,5,106,"Sg","Seabórgio","Metais de transição",new Color(255,105,180),"Desconhecido",271),
+	Bh(6,6,107,"Bh","Bóhrio","Metais de transição",new Color(255,105,180),"Desconhecido",272),
+	Hs(6,7,108,"Hs","Hássio","Metais de transição",new Color(255,105,180),"Desconhecido",270),
+	Mt(6,8,109,"Mt","Meitnério","Metais de transição",new Color(255,105,180),"Desconhecido",276),
+	Ds(6,9,110,"Ds","Darmstádio","Metais de transição",new Color(255,105,180),"Desconhecido",281),
+	Rg(6,10,111,"Rg","Roentgênio","Metais de transição",new Color(255,105,180),"Desconhecido",280),
+	Cn(6,11,112,"Cn","Copernício","Metais de transição",new Color(255,105,180),"Desconhecido",285),
+	La(8,3,57,"La","Lantânio","Lantanídeos",new Color(186,85,211),"Sólido",138.90547),
+	Ce(8,4,58,"Ce","Cério","Lantanídeos",new Color(186,85,211),"Sólido",140.116),
+	Pr(8,5,59,"Pr","Praseodímio","Lantanídeos",new Color(186,85,211),"Sólido",140.90765),
+	Nd(8,6,60,"Nd","Neodímio","Lantanídeos",new Color(186,85,211),"Sólido",144.242),
+	Pm(8,7,61,"Pm","Promécio","Lantanídeos",new Color(186,85,211),"Desconhecido",145),
+	Sm(8,8,62,"Sm","samário","Lantanídeos",new Color(186,85,211),"Sólido",150.36),
+	Eu(8,9,63,"Eu","Európio","Lantanídeos",new Color(186,85,211),"Sólido",151.964),
+	Gd(8,10,64,"Gd","Gadolínio","Lantanídeos",new Color(186,85,211),"Sólido",157.25),
+	Tb(8,11,65,"Tb","Térbio","Lantanídeos",new Color(186,85,211),"Sólido",158.92535),
+	Dy(8,12,66,"Dy","Disprósio","Lantanídeos",new Color(186,85,211),"Sólido",162.5),
+	Ho(8,13,67,"Ho","Hólmio","Lantanídeos",new Color(186,85,211),"Sólido",164.93032),
+	Er(8,14,68,"Er","Érbio","Lantanídeos",new Color(186,85,211),"Sólido",167.259),
+	Tm(8,15,69,"Tm","Túlio","Lantanídeos",new Color(186,85,211),"Sólido",168.93421),
+	Yb(8,16,70,"Yb","Itérbio","Lantanídeos",new Color(186,85,211),"Sólido",173.054),
+	Lu(8,17,71,"Lu","Lutécio","Lantanídeos",new Color(186,85,211),"Sólido",174.9668),
+	Ac(9,3,89,"Ac","Actínio","Actinídeos",new Color(238,130,238),"Sólido",227),
+	Th(9,4,90,"Th","Tório","Actinídeos",new Color(238,130,238),"Sólido",232.03806),
+	Pa(9,5,91,"Pa","Protactínio","Actinídeos",new Color(238,130,238),"Sólido",231.03588),
+	U(9,6,92,"U","Urânio","Actinídeos",new Color(238,130,238),"Sólido",238.02891),
+	Np(9,7,93,"Np","Neptúnio","Actinídeos",new Color(238,130,238),"Desconhecido",237),
+	Pu(9,8,94,"Pu","Plutônio","Actinídeos",new Color(238,130,238),"Desconhecido",244),
+	Am(9,9,95,"Am","Amerício","Actinídeos",new Color(238,130,238),"Desconhecido",243),
+	Cm(9,10,96,"Cm","Cúrio","Actinídeos",new Color(238,130,238),"Desconhecido",247),
+	Bk(9,11,97,"Bk","Berquélio","Actinídeos",new Color(238,130,238),"Desconhecido",247),
+	Cf(9,12,98,"Cf","Califórnio","Actinídeos",new Color(238,130,238),"Desconhecido",251),
+	Es(9,13,99,"Es","Einstênio","Actinídeos",new Color(238,130,238),"Desconhecido",252),
+	Fm(9,14,100,"Fm","Férmio","Actinídeos",new Color(238,130,238),"Desconhecido",257),
+	Md(9,15,101,"Md","Mendelévio","Actinídeos",new Color(238,130,238),"Desconhecido",258),
+	No(9,16,102,"No","Nobélio","Actinídeos",new Color(238,130,238),"Desconhecido",259),
+	Lr(9,17,103,"Lr","Laurêncio","Actinídeos",new Color(238,130,238),"Desconhecido",262);
+
+
+	private int coluna;
+	private int linha;
+	private int numeroAtomico;
+	private String simbolo;
+	private String nome;
+	private String familia;
+	private Color corFamilia;
+	private String estadoFisico;
+	private double massaAtomico;
+
+	private ElementoQuimico(int linha, int coluna, int numeroAtomico, String simbolo, String nome, String familia,
+			Color corFamilia, String estadoFisico, double massaAtomico) {
+		this.coluna = coluna;
+		this.linha = linha;
+		this.numeroAtomico = numeroAtomico;
+		this.simbolo = simbolo;
+		this.nome = nome;
+		this.familia = familia;
+		this.corFamilia = corFamilia;
+		this.estadoFisico = estadoFisico;
+		this.massaAtomico = massaAtomico;
+	}
+
+	public int getColuna() {
+		return coluna;
+	}
+
+	public int getLinha() {
+		return linha;
+	}
+
+	public int getNumeroAtomico() {
+		return numeroAtomico;
+	}
+
+	public String getSimbolo() {
+		return simbolo;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public String getFamilia() {
+		return familia;
+	}
+
+	public Color getCorFamilia() {
+		return corFamilia;
+	}
+
+	public String getEstadoFisico() {
+		return estadoFisico;
+	}
+
+	public double getMassaAtomico() {
+		return massaAtomico;
+	}
+
+	@Override
+	public String toString() {
+		return "ElementoQuimico [coluna=" + coluna + ", linha=" + linha + ", numeroAtomico=" + numeroAtomico
+				+ ", simbolo=" + simbolo + ", nome=" + nome + ", familia=" + familia + ", corFamilia="
+				+corFamilia + ", estadoFisico=" + estadoFisico + ", massaAtomico=" + massaAtomico
+				+ "]";
+	}
+}
