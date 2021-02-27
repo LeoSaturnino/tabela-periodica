@@ -7,7 +7,8 @@ Criação de uma tabela periódica digital
 - Java 7
 
 <h3>Objetivo</h3>
-Um dos meus Primeiros Projetos, desenvolvido na época da Faculdade, com intuito de aprender a criação de interfaces GUI.
+Um dos meus Primeiros Projetos, desenvolvido na época da Faculdade, com intuito de aprender a criação de interfaces 
+GUI, leitura de arquivos e também a utilização de Enum em Java 7.
 
 <h3>Funcionamento</h3>
 O Projeto exibe uma tela com os elementos da tabela periódica, sendo que ao clicar em um elemento aparece um pop-up com 
